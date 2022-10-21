@@ -1,0 +1,67 @@
+import React from 'react';
+
+function Navbar() {
+  return (
+    <>
+      <div className="Navabar-container flex justify-between p-2 w-screen h-20 items-center ">
+        <div className="navbar-left text-3xl font-mono font-bold flex justify-start w-1/2">
+          <div className="Koality-Distribution-logo flex justify-center cursor-pointer">
+            <span className="text-3xl">🏫</span>
+            <span className="text-4xl">Empire</span>{' '}
+          </div>
+        </div>
+        <div className="navbar-right flex justify-around w-1/2">
+          <div className="phone-container flex items-center gap-2">
+            <div className="phone-icon text-3xl">📞</div>
+            <div className="phone-number-container ">
+              <div className="phone-text text-xl text-gray-500 ">Phone</div>
+              <div className="phone-number font-semibold">
+                +1 (747) 500-1766
+              </div>
+            </div>
+          </div>
+          <div className="email-container flex items-center gap-2">
+            <div className="email-icon text-3xl">📧</div>
+            <div className="email-address-container ">
+              <div className="email-text text-xl text-gray-500">Email</div>
+              <div className="email-address font-semibold">
+                deals@empiredistributionusa.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="navbar-pages-container flex justify-around p-2  ">
+        <div className="navbar-pages-left  ">
+          <ul className="pages-list flex gap-2  ">
+            <li className="home-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
+              Home
+            </li>
+            <li className="products-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
+              Products
+            </li>
+            <li className="about-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
+              About us
+            </li>
+            <li className="apply-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
+              Apply
+            </li>
+            <li className="partners-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
+              Partners
+            </li>
+            <li className="news-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
+              News
+            </li>
+            <li className="contacts-text cursor-pointer pr-2 hover:text-blue-700">
+              Contacts
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-pages-right">Q Search</div>
+      </div>
+    </>
+  );
+}
+
+export default Navbar;
