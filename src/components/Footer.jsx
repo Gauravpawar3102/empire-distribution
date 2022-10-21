@@ -2,8 +2,8 @@ import React from 'react';
 
 function Footer() {
   return (
-    <div className="footer-container flex justify-around bg-blue-200 p-2 w-screen ">
-      <ul className="footer-pages-list list-disc">
+    <div className="footer-container flex justify-around bg-indigo-200 p-2 m-2 rounded-lg">
+      <ul className="footer-pages-list list-disc cursor-pointer">
         <li>Home</li>
         <li>Products</li>
         <li>About us</li>
@@ -12,7 +12,7 @@ function Footer() {
         <li>News</li>
         <li>Contacts</li>
       </ul>
-      <ul className="footer-pages-list list-disc">
+      <ul className="footer-pages-list list-disc cursor-pointer">
         <li>Documents</li>
         <li>FAQ</li>
         <li>Terms and Conditions</li>
