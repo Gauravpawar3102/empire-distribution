@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Navbar() {
+  const [search, setSearch] = useState(false);
+
+  const handleSearch = () => {
+    setSearch(!search);
+  };
+
   return (
     <>
-      <div className="Navabar-container flex justify-between p-2 w-screen h-20 items-center ">
+      <div className="Navabar-container flex justify-between p-2 w-screen h-20 items-center  ">
         <div className="navbar-left text-3xl font-mono font-bold flex justify-start w-1/2">
           <div className="Koality-Distribution-logo flex justify-center cursor-pointer">
             <span className="text-3xl">🏫</span>
@@ -32,7 +38,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="navbar-pages-container flex justify-around p-2  ">
+      <div className="navbar-pages-container flex justify-around p-2 border-b-2 border-b-gray-400 pb-6 items-center ">
         <div className="navbar-pages-left  ">
           <ul className="pages-list flex gap-2  ">
             <li className="home-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
@@ -58,7 +64,29 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div className="navbar-pages-right">Q Search</div>
+
+        {search ? (
+          <div className="search-bar-container flex bg-cyan-300 items-center p-2">
+            <input
+              className="p-1 outline-none text-gray-500 font-mono"
+              type="text"
+              placeholder="Search "
+            />
+            <div
+              className="close  cursor-pointer  ml-2 text-xl"
+              onClick={handleSearch}
+            >
+              ❌
+            </div>
+          </div>
+        ) : (
+          <div
+            className="navbar-pages-right cursor-pointer"
+            onClick={handleSearch}
+          >
+            🔍 Search
+          </div>
+        )}
       </div>
     </>
   );
