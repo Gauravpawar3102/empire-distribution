@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "2",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "3",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "4",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "5",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "6",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "7",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "8",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "9",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    },
+    {
+      "id": "10",
+      "title": "Heater",
+      "price": "200",
+      "quantity": "120",
+      "asin": "BKJHSLKJH",
+      "upc": "654654645"
+    }
+  ],
+  "home": [
+    {
+      "heroheading": "Product Line",
+      "heroparagraph": "we offer a wide range of products for convinence stores, grocery stores , discount stores and specially stores in california",
+      "ourmission": "Our mission is to help you source your next high profitable product. We strive to fulfill ongoing market demand and by adding value to both vendor and reseller through timely availability of the goods, product knowledge, and value-adding to a profitable working relationship. Our professional sales team is committed to satisfying your needs. Empire Distribution USA representatives will work with you to make your store successful by keeping you up-to-date with the latest products and programs. Our services include reordering reminders, daily flash-deal alerts, special prep, and shipping services.",
+      "homeproducts": [
+        {
+          "id": "1",
+          "title": "Wholesale 3M Daily Face Mask"
+        },
+        {
+          "id": "2",
+          "title": "Wholesale 3M Daily Face Mask"
+        },
+        {
+          "id": "3",
+          "title": "Wholesale 3M Daily Face Mask"
+        },
+        {
+          "id": "4",
+          "title": "Wholesale 3M Daily Face Mask"
+        }
+      ]
+    }
+  ]
+}

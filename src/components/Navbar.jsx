@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [search, setSearch] = useState(false);
@@ -9,7 +10,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="Navabar-container flex justify-between p-2 w-screen h-20 items-center  ">
+      <div className="Navabar-container flex justify-between p-2 h-20 items-center  ">
         <div className="navbar-left text-3xl font-mono font-bold flex justify-start w-1/2">
           <div className="Koality-Distribution-logo flex justify-center cursor-pointer">
             <span className="text-3xl">🏫</span>
@@ -42,25 +43,25 @@ function Navbar() {
         <div className="navbar-pages-left  ">
           <ul className="pages-list flex gap-2  ">
             <li className="home-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
-              Home
+              <Link to="/">Home</Link>
             </li>
             <li className="products-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
-              Products
+              <Link to="products">Products</Link>
             </li>
             <li className="about-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
-              About us
+              <Link to="about">About us</Link>
             </li>
             <li className="apply-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
-              Apply
+              <Link to="register">Apply</Link>
             </li>
             <li className="partners-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
-              Partners
+              <Link to="partners">Partners</Link>
             </li>
             <li className="news-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
-              News
+              <Link to="news">News</Link>
             </li>
             <li className="contacts-text cursor-pointer pr-2 hover:text-blue-700">
-              Contacts
+              <Link to="contacts">Contacts</Link>
             </li>
           </ul>
         </div>
