@@ -45,7 +45,6 @@ function Home() {
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Eligendi earum culpa possimus accusantium, corporis suscipit
                 provident maxime nulla optio recusandae ex vero consequatur.
-                Nulla animi atque assumenda, minima ipsum ut.
               </div>
             </div>
             <div className="haa-bottom">
