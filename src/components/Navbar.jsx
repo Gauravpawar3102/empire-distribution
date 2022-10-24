@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
   const [search, setSearch] = useState(false);
-
+  const [term, setTerm] = useState('');
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate(`/search?q=${term}`);
+  };
   const handleSearch = () => {
     setSearch(!search);
   };
@@ -72,7 +77,15 @@ function Navbar() {
               className="p-1 outline-none text-gray-500 font-mono"
               type="text"
               placeholder="Search "
+              onChange={(e) => setTerm(e.target.value)}
+              required
             />
+            <div
+              className="search  cursor-pointer  ml-2 text-xl"
+              onClick={handleSubmit}
+            >
+              🔍
+            </div>
             <div
               className="close  cursor-pointer  ml-2 text-xl"
               onClick={handleSearch}

@@ -10,7 +10,7 @@
     },
     {
       "id": "2",
-      "title": "Heater",
+      "title": "Heater2",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
@@ -18,7 +18,7 @@
     },
     {
       "id": "3",
-      "title": "Heater",
+      "title": "Heater3",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
@@ -26,7 +26,7 @@
     },
     {
       "id": "4",
-      "title": "Heater",
+      "title": "Heater4",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
@@ -34,7 +34,7 @@
     },
     {
       "id": "5",
-      "title": "Heater",
+      "title": "Heater5",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
@@ -42,7 +42,7 @@
     },
     {
       "id": "6",
-      "title": "Heater",
+      "title": "Heater6",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
@@ -50,7 +50,7 @@
     },
     {
       "id": "7",
-      "title": "Heater",
+      "title": "Heater7",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
@@ -58,7 +58,7 @@
     },
     {
       "id": "8",
-      "title": "Heater",
+      "title": "Heater8",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
@@ -66,7 +66,7 @@
     },
     {
       "id": "9",
-      "title": "Heater",
+      "title": "Heater9",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
@@ -74,7 +74,7 @@
     },
     {
       "id": "10",
-      "title": "Heater",
+      "title": "Heater10",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",

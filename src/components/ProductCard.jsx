@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ProductCard({ products }) {
   if (products.length === 0) {
@@ -14,6 +15,7 @@ function ProductCard({ products }) {
           <div className="quantity">120</div>
           <div className="asin">Asin</div>
           <div className="upc">upc</div>
+          <Link to={`/product/${product.id}`}>view</Link>
         </div>
       ))}
       ;
