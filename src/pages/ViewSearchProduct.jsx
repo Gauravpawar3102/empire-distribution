@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function ProductCard({ products }) {
+function ViewSearchProduct({ products }) {
   if (products.length === 0) {
-    return <div className="error">No products to load ...</div>;
+    return <div className="error">No Recipes to Load ...</div>;
   }
   return (
-    <div className="list">
+    <div className="container">
       {products.map((product) => (
         <div className="product-card-container m-2 bg-cyan-200">
           {/* {console.log(product)} */}
@@ -18,9 +18,8 @@ function ProductCard({ products }) {
           <Link to={`/product/${product.id}`}>view</Link>
         </div>
       ))}
-      ;
     </div>
   );
 }
 
-export default ProductCard;
+export default ViewSearchProduct;

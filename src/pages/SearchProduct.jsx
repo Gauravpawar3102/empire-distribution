@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { useFetch } from '../hooks/usefetch';
-import Products from './Products';
+import ViewSearchProduct from './ViewSearchProduct';
 
 function SearchProduct() {
   const queryString = useLocation().search;
@@ -14,7 +14,7 @@ function SearchProduct() {
       <h2 className="page-title">Recipes including "{query}"</h2>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
-      {data && <Products products={data} />}
+      {data && <ViewSearchProduct products={data} />}
     </div>
   );
 }
