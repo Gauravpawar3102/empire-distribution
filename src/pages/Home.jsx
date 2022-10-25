@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useFetch } from '../hooks/usefetch';
 
 function Home() {
@@ -10,33 +11,47 @@ function Home() {
       {console.log(data)}
       {data && (
         <>
-          <div className="hero-container bg-gray-50 h-60 flex w-full">
-            <div className="hero-left2 w-2/3">
-              <h1 className="hl-heading">{data[0].heroheading}</h1>
-              <p className="hl-text">{data[0].heroparagraph}</p>
+          <div className="hero-container bg-gray-50 h-60 flex w-full ">
+            <div className="hero-left2 flex flex-col p-8 content-between  h-full  w-2/3 ">
+              <div className="hl-heading text-3xl font-medium ">
+                {data[0].heroheading}
+              </div>
+              <p className="hl-text font-small  py-3 ">
+                {data[0].heroparagraph.slice(0, 150) + '...'}
+              </p>
             </div>
-            <div className="hero-right bg-red-200 w-1/3 ">image</div>
+            <div className="hero-right bg-red-200 w-1/3 text-center">image</div>
           </div>
-          <div className="our-mission-container">
-            <div className="mission-left">
-              <div className="ol-heading">Our Mission</div>
+          <div className="our-mission-container flex w-full">
+            <div className="mission-left w-2/3">
+              <div className="ol-heading text-gray-700 text-3xl  ">
+                Our Mission
+              </div>
+              <p className="ol-text p-2 bg-cyan-50">{data[0].ourmission}</p>
             </div>
-            <p className="ol-text">{data[0].ourmission}</p>
-            <div className="mission-right">image</div>
+            <div className="mission-right w-1/3 bg-red-100 text-center">
+              image
+            </div>
           </div>
           <div className="shop-by-products-container">
-            <div className="sbp-top">Shop by Products ➡</div>
+            <div className="sbp-top flex justify-end ">
+              <Link to="/products">Shop by Products ➡</Link>
+            </div>
             <div className="sbp-bottom flex justify-center">
               {data[0].homeproducts.map((product) => (
-                <div className="product-card-container m-2 bg-cyan-200">
-                  {console.log(product)}
-                  <div className="title">title:{product.title}</div>
-                  <div className="price">Price:{product.price}</div>
+                <div className="product-card-container m-2 bg-gray-100 h-48  ">
+                  {/* {console.log(product)} */}
+                  <img
+                    className=" h-4/5 w-full object-cover"
+                    src="https://empiredistributionusa.com/assets/images/product/267203988_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82.jpg"
+                    alt="img"
+                  />
+                  <div className="title h">{product.title}</div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="home-apply-account-container">
+          {/* <div className="home-apply-account-container">
             <div className="haa-top">
               <div className="haa-heading">
                 Empire Distribution USA is a B2B Wholesale Website
@@ -52,9 +67,9 @@ function Home() {
                 Apply for Wholesale account
               </button>
             </div>
-          </div>
-          <div className="home-products-grid">grid</div>
-          <div className="home-news-container">
+          </div> */}
+          {/* <div className="home-products-grid">grid</div>
+            <div className="home-news-container">
             <div className="hn-top">
               <div className="hn-heading">News</div>
             </div>
@@ -67,7 +82,7 @@ function Home() {
                 </h2>
               </div>
             </div>
-          </div>
+          </div> */}
         </>
       )}
     </div>

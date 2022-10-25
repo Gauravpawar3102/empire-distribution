@@ -13,7 +13,7 @@ import ViewProduct from './pages/ViewProduct';
 
 function App() {
   return (
-    <div className="App ">
+    <div className="App  mx-8 ">
       <Router>
         <Navbar />
         <Routes>
