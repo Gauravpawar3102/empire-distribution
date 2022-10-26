@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 function Navbar() {
   const [search, setSearch] = useState(false);
@@ -47,8 +47,11 @@ function Navbar() {
       <div className="navbar-pages-container flex justify-around p-2 border-b-2 border-b-gray-400 pb-6 items-center ">
         <div className="navbar-pages-left  ">
           <ul className="pages-list flex gap-2  ">
-            <li className="home-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
-              <Link to="/">Home</Link>
+            <li
+              className="home-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700
+   "
+            >
+              <NavLink to="/">Home</NavLink>
             </li>
             <li className="products-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
               <Link to="products">Products</Link>
@@ -62,9 +65,9 @@ function Navbar() {
             <li className="partners-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
               <Link to="partners">Partners</Link>
             </li>
-            <li className="news-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
+            {/* <li className="news-text cursor-pointer pr-2 border-r-2   border-r-gray-500  hover:text-blue-700">
               <Link to="news">News</Link>
-            </li>
+            </li> */}
             <li className="contacts-text cursor-pointer pr-2 hover:text-blue-700">
               <Link to="contacts">Contacts</Link>
             </li>
