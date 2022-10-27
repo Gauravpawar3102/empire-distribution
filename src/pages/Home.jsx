@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useFetch } from '../hooks/usefetch';
-
+import { db } from '../firebase-config';
+import { collection, getDocs } from 'firebase/firestore';
 function Home() {
+  const [homeData, setHomeData] = useState([]);
   const { data, isPending, error } = useFetch('http://localhost:3000/home');
+
+  useEffect(() => {
+    const homeCollectionRef = collection(db, 'home');
+    const getHomeData = async () => {
+      const fetchHomeData = await getDocs(homeCollectionRef);
+      setHomeData(
+        fetchHomeData.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+      );
+    };
+    getHomeData();
+  }, []);
+
   return (
     <div className="Home-page-container">
+      {console.log(homeData)}
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
       {console.log(data)}
