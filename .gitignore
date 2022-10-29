@@ -9,6 +9,7 @@
 
 # production
 /build
+# Secret file
 .env
 
 # misc
