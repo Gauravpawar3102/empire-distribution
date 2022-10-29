@@ -36,6 +36,42 @@ function Home() {
                 image
               </div>
             </div>
+            <div className="our-mission-container flex w-full">
+              <div className="mission-left w-2/3">
+                <div className="ol-heading text-gray-700 text-3xl  ">
+                  Our Mission
+                </div>
+                <p className="ol-text p-2 bg-cyan-50">
+                  {data.ourmissionparagraph}
+                </p>
+              </div>
+              <div className="mission-right w-1/3 bg-red-100 text-center">
+                image
+              </div>
+            </div>
+            <div className="shop-by-products-container">
+              <div className="sbp-top flex justify-end ">
+                <Link to="/products">Shop by Products ➡</Link>
+              </div>
+              <div className="sbp-bottom flex justify-center">
+                {data.homeproducts.map((product) => (
+                  <div
+                    key={product.id}
+                    className="product-card-container m-2  h-48  "
+                  >
+                    {/* {console.log(product)} */}
+                    <img
+                      className=" h-4/5 w-full object-contain"
+                      src={product.image}
+                      alt="img"
+                    />
+                    <div className="title w-full p-2 bg-black text-white mt-2">
+                      {product.title.slice(0, 30) + '...'}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         );
       })}
