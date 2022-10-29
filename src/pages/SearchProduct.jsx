@@ -11,7 +11,7 @@ function SearchProduct() {
   const { data, isPending, error } = useFetch(url);
   return (
     <div className="search-product">
-      <h2 className="page-title">Recipes including "{query}"</h2>
+      <h2 className="page-title">Showing results including "{query}"</h2>
       {error && <p className="error">{error}</p>}
       {isPending && <p className="loading">Loading...</p>}
       {data && <ViewSearchProduct products={data} />}

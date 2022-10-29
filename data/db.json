@@ -2,83 +2,103 @@
   "products": [
     {
       "id": "1",
-      "title": "Heater",
-      "price": "200",
+      "title": "Carpet Cleaner",
+      "price": "59",
       "quantity": "120",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "654654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/88846573_Bisell.jpg",
+      "brand": "Bissell"
     },
     {
       "id": "2",
-      "title": "Heater2",
-      "price": "200",
+      "title": "Muscle Stimulator",
+      "price": "199",
       "quantity": "120",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "654654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/943707073_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(11).jpg",
+      "brand": "Tens"
     },
     {
       "id": "3",
-      "title": "Heater3",
-      "price": "200",
-      "quantity": "120",
+      "title": "Naps Eye Liner",
+      "price": "19.99",
+      "quantity": "1000",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "654654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/873145996_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(6).jpg",
+      "brand": "Naps"
     },
     {
       "id": "4",
-      "title": "Heater4",
-      "price": "200",
-      "quantity": "120",
+      "title": "Kent 2L Glass Mug",
+      "price": "9.99",
+      "quantity": "1000",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "654654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/475439712_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(10).jpg",
+      "brand": "Kent"
     },
     {
       "id": "5",
-      "title": "Heater5",
-      "price": "200",
-      "quantity": "120",
+      "title": "Air Freshner",
+      "price": "2",
+      "quantity": "1000",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "654654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/597131514_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(13).jpg",
+      "brand": "air pure"
     },
     {
       "id": "6",
-      "title": "Heater6",
-      "price": "200",
-      "quantity": "120",
+      "title": "Dial Handwash",
+      "price": "2.99",
+      "quantity": "1000",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "654654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/829271463_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(9).jpg",
+      "brand": "Dial"
     },
     {
       "id": "7",
-      "title": "Heater7",
-      "price": "200",
-      "quantity": "120",
+      "title": "Whey Protien",
+      "price": "25",
+      "quantity": "100",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "6546545",
+      "img": "https://empiredistributionusa.com/assets/images/product/743562623_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(8).jpg",
+      "brand": "optimum nutrition"
     },
     {
       "id": "8",
-      "title": "Heater8",
-      "price": "200",
-      "quantity": "120",
+      "title": "DampRid cleaner",
+      "price": "2",
+      "quantity": "1200",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "654654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/382129075_6bb23ebf-fdf1-4683-8f03-8b451a9961ad.jpg",
+      "brand": "Damprid"
     },
     {
       "id": "9",
-      "title": "Heater9",
+      "title": "Stetenson Perfume",
       "price": "200",
       "quantity": "120",
       "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "upc": "4654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/513875433_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(5).jpg",
+      "brand": "fogg"
     },
     {
       "id": "10",
-      "title": "Heater10",
-      "price": "200",
-      "quantity": "120",
-      "asin": "BKJHSLKJH",
-      "upc": "654654645"
+      "title": "Eay longlasting perfume ",
+      "price": "20",
+      "quantity": "200",
+      "asin": "KJHSLKJH",
+      "upc": "6654645",
+      "img": "https://empiredistributionusa.com/assets/images/product/406810791_%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20(4).jpg",
+      "brand": "wildfox"
     }
   ],
   "home": [

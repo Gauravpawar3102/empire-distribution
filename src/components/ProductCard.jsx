@@ -8,15 +8,25 @@ function ProductCard({ products }) {
   return (
     <div className="list flex flex-wrap justify-center">
       {products.map((product) => (
-        <div className="product-card-container m-2 bg-gray-50 w-1/6  text-center ">
+        <div
+          key={product.id}
+          className="product-card-container m-2 bg-gray-50 w-1/5  text-center p-4"
+        >
           {/* {console.log(product)} */}
-          <div className="title">title:{product.title}</div>
-          <div className="price">Price:{product.price}</div>
-          <div className="quantity">120</div>
-          <div className="asin">Asin</div>
-          <div className="upc">upc</div>
+          <img
+            className="image h-40 w-full object-contain"
+            src={product.img}
+            alt="img"
+          />
+          <div className="title capitalize font-semibold ">{product.title}</div>
+          <div className="price ">Price:${product.price} </div>
+          <div className="brand">Brand: {product.brand}</div>
+          <div className="quantity">MOQ: {product.quantity}</div>
+          <div className="asin">Asin: {product.asin}</div>
+          <div className="upc">upc: {product.upc}</div>
+
           <Link
-            className="bg-black text-white px-2 py-1 rounded-lg "
+            className="bg-blue-400  text-white cursor-pointer text-2xl text-semibold px-2 text-center mt-2  rounded-lg shadow-sm "
             to={`/product/${product.id}`}
           >
             view

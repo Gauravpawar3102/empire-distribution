@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div className="footer-container flex justify-around bg-indigo-200 p-2 m-2 rounded-lg">
+    <div className="footer-container flex justify-around border-2 border-black p-2 m-2 rounded-lg">
       <ul className="footer-pages-list list-disc cursor-pointer">
         <li className="hover:underline">
           <Link to="/">Home</Link>
