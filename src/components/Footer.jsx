@@ -27,7 +27,7 @@ function Footer() {
       <ul className="footer-pages-list list-disc cursor-pointer">
         <li>
           <li className="hover:underline">
-            <Link>Documents</Link>
+            <Link>Documents  </Link>
           </li>
         </li>
         <li>
